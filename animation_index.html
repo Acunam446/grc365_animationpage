@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<style>
+	@font-face {
+		font-family: yellowbanana;
+		src: url("Yellow Banana.otf");
+	} @font-face {
+		font-family: badcomic;
+		src: url("BadComic-Regular.ttf");
+	}body {
+		background: whitesmoke;
+	} #page {
+		width: 1024px;
+		height: 1328px;
+		background: white;
+		border: 1px solid darkgray;
+		box-shadow: 2px 3px 6px darkgray;
+		margin: 24px auto;
+	} #banner {
+		width: 1024px;
+	} h1 {
+		text-align: center;
+		margin: auto;
+		text-shadow: 1px 2px 4px darkgray;
+		font: 42pt/1.6em yellowbanana;
+	} button {
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		background: lightblue;
+		border: 1px solid blue;
+		display: block;
+		position: relative;
+		left: 25px;
+	} #ellie {
+		width: 250px;
+		position: relative;
+		left: 0;
+		animation-name: letswalk;
+		animation-duration: 4s;
+		animation-fill-mode: forwards;
+		animation-play-state: paused;
+	} @keyframes letswalk {
+		0% {left:0;}
+		100% {left: 765px;}
+	} p {
+		font: 18pt/1.6em badcomic;
+		margin: auto;
+		width: 824px;
+		margin: 0 auto;
+	}
+</style>
+</head>
+
+<body>
+	<div id="page">
+		<img id="banner" src="rebeccasugar.jpeg"/>
+		<h1> What is Animation?</h1>
+		<button onClick="document.getElementById('ellie').style.animationPlayState='running';">GO!</button>
+		<img id="ellie" src="Walk.png"/>
+		<p>As you can see, Animation is the technique of creating the illusion of movement by rapidly displaying a sequence of static images or frames. But it can also be different media; Traditional/Cel Animation, 2D Animation, 3D Animation, Stop Motion, and Motion Graphics. In this page, this animation is using keyframes and JavaScript in Dreamweaver Adobe.</p> </br>
+		<p>Animations is mostly use for the entertainment industry. An animated cartoon, or simply a cartoon, is an animated film, usually a short film, that features an exaggerated style. This style is often inspired by comic strips, gag cartoons, and other non-animated art forms.</p>
+	</div>
+</body>
+</html>
